@@ -1,0 +1,59 @@
+{
+  "name": "eslint-config-abouslimi",
+  "version": "1.0.0",
+  "description": "Personal ESLint configuration that includes airbnb-base, prettier and some personal rules.",
+  "main": "rules/index.js",
+  "files": [
+    "rules/"
+  ],
+  "engines": {
+    "node": ">=6.10"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "shareable",
+    "personal",
+    "ali",
+    "hosni",
+    "bouslimi",
+    "abouslimi",
+    "ahbouslimi"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abouslimi/eslint-config-abouslimi.git"
+  },
+  "author": "Ali Hosni Bouslimi <ahbouslimi@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "test": "eslint \"rules/**/*.js\""
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "eslint": "^5.4.0",
+    "husky": "^4.0.0",
+    "lint-staged": "^10.0.2"
+  },
+  "dependencies": {
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "prettier": "^1.11.1"
+  },
+  "eslintConfig": {
+    "extends": "./rules/index.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
