@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-abouslimi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Personal ESLint configuration that includes airbnb-base, prettier and some personal rules.",
   "main": "rules/index.js",
   "files": [
