@@ -1,16 +1,21 @@
 {
   "name": "eslint-config-abouslimi",
   "version": "1.0.2",
-  "description": "Personal ESLint configuration that includes airbnb-base, prettier and some personal rules.",
-  "main": "rules/index.js",
+  "description": "ESLint shareable config for my personal style",
+  "author": "Ali Hosni Bouslimi <ahbouslimi@gmail.com>",
+  "license": "ISC",
+  "repository": "abouslimi/eslint-config-abouslimi",
+  "main": "index.js",
   "files": [
-    "rules/"
+    "index.js"
   ],
   "engines": {
-    "node": ">=6.10"
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "eslint \"*.js\""
   },
   "keywords": [
-    "eslint",
     "config",
     "shareable",
     "personal",
@@ -18,31 +23,36 @@
     "hosni",
     "bouslimi",
     "abouslimi",
-    "ahbouslimi"
+    "ahbouslimi",
+    "code",
+    "quality",
+    "style",
+    "lint",
+    "linter",
+    "jscs",
+    "jshint",
+    "jslint",
+    "eslint",
+    "validate",
+    "code style",
+    "strict",
+    "check",
+    "checker",
+    "verify",
+    "enforce",
+    "hint"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/abouslimi/eslint-config-abouslimi.git"
-  },
-  "author": "Ali Hosni Bouslimi <ahbouslimi@gmail.com>",
-  "license": "ISC",
-  "scripts": {
-    "test": "eslint \"rules/**/*.js\""
-  },
   "devDependencies": {
-    "eslint": "^7.13.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.14.0",
     "husky": "^4.3.0",
     "lint-staged": "^10.5.1"
   },
-  "dependencies": {
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^1.19.1"
+  "peerDependencies": {
+    "eslint": ">=5.16.0"
   },
   "eslintConfig": {
-    "extends": "./rules/index.js"
+    "extends": "./index.js"
   },
   "husky": {
     "hooks": {

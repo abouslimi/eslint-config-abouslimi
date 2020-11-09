@@ -3,9 +3,8 @@
 [![Travis](https://img.shields.io/travis/abouslimi/eslint-config-abouslimi.svg)](https://travis-ci.org/abouslimi/eslint-config-abouslimi)
 [![npm](https://img.shields.io/npm/v/eslint-config-abouslimi.svg)](https://www.npmjs.com/package/eslint-config-abouslimi)
 [![npm](https://img.shields.io/npm/dt/eslint-config-abouslimi.svg)](https://www.npmjs.com/package/eslint-config-abouslimi)
-[![Styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-Personal ESLint configuration that includes airbnb-base, prettier and some personal rules.
+ESLint shareable config for my personal style.
 
 ## Installation
 
@@ -55,16 +54,6 @@ Config setup directly in `package.json`
 }
 ```
 
-## Contributing
-
-1.  Fork it!
-2.  Create your feature branch: `git checkout -b my-new-feature`
-3.  Commit your changes: `git commit -am 'Add some feature'`
-4.  Push to the branch: `git push origin my-new-feature`
-5.  Submit a pull request
-
 ## Credits
 
-* [Airbnb: JavaScript Style Guide](https://github.com/airbnb/javascript)
-* [Prettier : The opinionated code formatter.](https://github.com/prettier/prettier)
-
+* [Google: JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
