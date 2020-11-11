@@ -7,17 +7,16 @@ module.exports = {
       "always",
     ],
     "require-jsdoc": ["error", {
-      "require": {
-        "FunctionDeclaration": false,
-        "MethodDefinition": false,
-        "ClassDeclaration": true,
-        "ArrowFunctionExpression": false,
-        "FunctionExpression": false,
+      require: {
+        FunctionDeclaration: true,
+        MethodDefinition: true,
+        ClassDeclaration: true,
       },
     }],
     "no-undef": "off",
     "no-new": "off",
     "no-new-object": "error",
+    "new-cap": "off",
     "object-curly-spacing": "off",
     "no-invalid-this": "off",
     "class-methods-use-this": "off",
